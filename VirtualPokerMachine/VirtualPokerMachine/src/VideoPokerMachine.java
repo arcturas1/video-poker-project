@@ -6,7 +6,7 @@
  * @author Jon
  *
  */
-public class VirtualPokerMachine {
+public class VideoPokerMachine {
 	
 	private PayoutTable gamePayoutTable;
 	
@@ -14,7 +14,7 @@ public class VirtualPokerMachine {
 	 * Constructs a VirtualPokerMachine with fake values for testing 
 	 */
 	
-	VirtualPokerMachine(){
+	VideoPokerMachine(){
 		gamePayoutTable = new PayoutTable();
 	}
 	
@@ -33,7 +33,7 @@ public class VirtualPokerMachine {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		VirtualPokerMachine testMachine = new VirtualPokerMachine();
+		VideoPokerMachine testMachine = new VideoPokerMachine();
 		System.out.println(testMachine.displayExpectedPayout());
 	}
 
