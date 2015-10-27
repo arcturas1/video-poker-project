@@ -30,9 +30,14 @@
  *
  *
  */
+
 public class VideoPokerMachine {
 	
+	//Attributes
+	
 	private PayoutTable gamePayoutTable;
+	
+	//Constructors
 	
 	/**
 	 * Constructs a VirtualPokerMachine with default values for testing purposes only.
@@ -44,6 +49,8 @@ public class VideoPokerMachine {
 		gamePayoutTable = new PayoutTable();
 	}
 	
+	//Behaviors
+	
 	/**
 	 * displayExpectedPayout requests the expected payout from this machine's payout table
 	 * 	and packages it into a string for display. It can also print the expected payout
@@ -54,8 +61,7 @@ public class VideoPokerMachine {
 	 * 
 	 * @return String containing the expected payout of the video poker game
 	 */
-	
-	
+		
 	private String displayExpectedPayout(boolean iPrintToConsole) {
 		
 		String results = "";
@@ -68,6 +74,8 @@ public class VideoPokerMachine {
 		
 		return results;
 	}
+	
+	//Accessors & Mutators
 	
 	/**
 	 * testing method for the Virtual Poker Machine
