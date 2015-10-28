@@ -1,4 +1,6 @@
- /**
+import java.util.Collection;
+
+/**
   * VideoPokerMachine models the User interface for a physical video poker machine.
   * It provides interfaces to fulfill user goals by coordinating communication between its
   * constituent parts. It provides some options to output results to the console, but is
@@ -36,6 +38,8 @@ public class VideoPokerMachine {
 	//Attributes
 	
 	private PayoutTable gamePayoutTable;
+	private Collection<Object> deck;
+	
 	
 	//Constructors
 	
@@ -49,7 +53,7 @@ public class VideoPokerMachine {
 		gamePayoutTable = new PayoutTable();
 	}
 	
-	//Behaviors
+	//Behaviors   
 	
 	/**
 	 * displayExpectedPayout requests the expected payout from this machine's payout table
