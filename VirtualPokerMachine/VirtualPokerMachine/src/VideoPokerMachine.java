@@ -1,4 +1,6 @@
 import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
   * VideoPokerMachine models the User interface for a physical video poker machine.
@@ -9,7 +11,7 @@ import java.util.Collection;
   *
  * @author Jonathan Grant
  *
- * @version 0.1
+ * @version 0.0
  * displays an arbitrary constant representing what will be a true expected payout for a
  * given video poker game's payout table.
  * 
@@ -38,7 +40,7 @@ public class VideoPokerMachine {
 	//Attributes
 	
 	private PayoutTable gamePayoutTable;
-	private Collection<Object> deck;
+	private  List<Object> deck;
 	
 	
 	//Constructors
@@ -51,6 +53,7 @@ public class VideoPokerMachine {
 	
 	VideoPokerMachine(){
 		gamePayoutTable = new PayoutTable();
+		deck = new LinkedList<Object>();
 	}
 	
 	//Behaviors   
