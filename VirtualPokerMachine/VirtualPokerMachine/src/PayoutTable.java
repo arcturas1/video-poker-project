@@ -31,7 +31,7 @@ public class PayoutTable {
 	//Behaviors
 	
 	/**
-	 * analyzes this payout table to calculate its expected payout.
+	 * calculateExpectedPayout analyzes this payout table to calculate its theoretical expected payout.
 	 */
 	private void calculateExpectedPayout() {
 		// TODO actually calculate an Expected Payout
@@ -41,7 +41,13 @@ public class PayoutTable {
 	}
 	
 	//Accessors and Mutators
-	
+	/**
+	 * accesses the theoretical Expected Payout (EP) for this Payout Table. If the EP has not been calculated for this 
+	 * table before, it will be calculated prior to access. This may delay results the first time EP is 
+	 * accessed, however subsequent attempts to access the EP should be rapid.
+	 * 
+	 * @return double: the Expected Payout of this Payout Table
+	 */
 	public double getExpectedPayout(){
 		if(expectedPayout < 0){
 			calculateExpectedPayout();
